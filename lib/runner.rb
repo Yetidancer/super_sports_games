@@ -58,4 +58,12 @@ puts "Would you like to view the events of the #{year} Knockoff Games?"
 
 print "> "
 
-require "pry"; binding.pry
+yn = $stdin.gets.chomp
+
+if yn.downcase != "no"
+
+  puts "#{contest.events}"
+
+end
+
+# require "pry"; binding.pry
