@@ -18,8 +18,13 @@ class EventTest < Minitest::Test
   def test_min_age
     assert_equal 18, @event1.min_age
   end
+  # require "pry"; binding.pry
 
   def test_average_age
+    assert_equal 26.6, @event1.average_age
+  end
 
-  end 
+  def test_standard_deviation_age
+    assert_equal 8.28, @event1.standard_deviation_age
+  end
 end
